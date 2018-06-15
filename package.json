@@ -1,5 +1,5 @@
 {
-  "name": "trezor-link",
+  "name": "mycrypto-trezor-link",
   "version": "1.5.0",
   "description": "Trezor Link for browser",
   "main": "lib/index.js",
