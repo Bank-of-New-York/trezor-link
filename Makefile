@@ -16,7 +16,7 @@ yarn:
 
 build: node_modules
 	rm -rf lib
-	cp -r src/ lib
+	cp -RP src/ lib
 	find lib/ -type f ! -name '*.js' | xargs -I {} rm {}
 	find lib/ -name '*.js' | xargs -I {} mv {} {}.flow
 	`npm bin`/babel src --out-dir lib
@@ -40,4 +40,3 @@ version-major: .version
 
 git-clean:
 	test ! -n "$$(git status --porcelain)"
-
